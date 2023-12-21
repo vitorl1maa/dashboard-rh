@@ -1,14 +1,60 @@
 <header class="bg-light rounded-bottom custom-box shadow">
   <div>
-    <p class="fs-5 text-light rounded-top bg-primary px-3">Status</p>
-   <nav>
-    <div class="d-flex gap-2">
-      <span>icone</span>
-      <div>
-        <p>Colaboradores</p>
-        <span>4</span>
+    <p class="fs-5 text-light rounded-top bg-primary px-3 accordion-header">
+      Status
+    </p>
+    <nav class="d-lg-flex pt-3 justify-content-between">
+      <div class="d-flex gap-2 align-items-center px-3 pb-3">
+        <span class="bg-warning p-2 rounded">
+          <ng-icon name="bootstrapPerson" class="icons-default"></ng-icon>
+        </span>
+        <div>
+          <p class="mb-0 fst-normal">Colaboradores</p>
+          <span class="fs-3">4</span>
+        </div>
       </div>
-    </div>
-   </nav>
+      <div class="d-flex gap-2 align-items-center px-3 pb-3">
+        <span class="bg-primary p-2 rounded">
+          <ng-icon
+            name="bootstrapClipboardCheck"
+            class="icons-default"
+          ></ng-icon>
+        </span>
+        <div>
+          <p class="mb-0 fst-normal">Marcações no dia</p>
+          <span class="fs-3">0</span>
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-center px-3 pb-3">
+        <span class="bg-info p-2 rounded">
+          <ng-icon name="bootstrapCloudyFill" class="icons-default"></ng-icon>
+        </span>
+        <div>
+          <p class="mb-0 fst-normal">Status do Servidor</p>
+          <span class="fs-3">Online</span>
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-center px-3 pb-3">
+        <span class="bg-success p-2 rounded">
+          <ng-icon name="bootstrapHddRackFill" class="icons-default"></ng-icon>
+        </span>
+        <div>
+          <p class="mb-0 fst-normal">Equipamentos</p>
+          <span class="fs-3">4</span>
+        </div>
+      </div>
+      <div class="d-flex gap-2 align-items-center px-3 pb-3">
+        <span class="bg-danger p-2 rounded">
+          <ng-icon
+            name="bootstrapExclamationOctagon"
+            class="icons-default"
+          ></ng-icon>
+        </span>
+        <div>
+          <p class="mb-0 fst-normal">Falhas no dia</p>
+          <span class="fs-3">17</span>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
