@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
 import { RecordingDateComponent } from './components/recording-date/recording-date.component';
+import { TableInfoComponent } from './components/table-info/table-info.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { RecordingDateComponent } from './components/recording-date/recording-da
     RouterOutlet,
     StatusBarComponent,
     RecordingDateComponent,
+    TableInfoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
