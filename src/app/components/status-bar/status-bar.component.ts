@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule, OnInit } from '@angular/core';
 import {
   NgIconComponent,
   provideIcons,
@@ -11,7 +11,22 @@ import {
   bootstrapHddRackFill,
   bootstrapExclamationOctagon,
 } from '@ng-icons/bootstrap-icons';
+import { StatusService } from '../../services/status.service';
+import { HttpClientModule } from '@angular/common/http';
 
+@NgModule({
+  imports: [HttpClientModule], // Adicione o HttpClientModule aos imports do seu módulo
+})
+export class StatusBarModule implements OnInit {
+  constructor(private statusService: StatusService) {}
+
+  ngOnInit(): void {
+    this.statusRequest();
+  }
+  statusRequest() {
+    this.statusService.getStatus().subscribe((data) => {});
+  }
+}
 @Component({
   selector: 'app-status-bar',
   standalone: true,
